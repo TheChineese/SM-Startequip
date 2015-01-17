@@ -37,7 +37,7 @@ public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
 public PlayerSpawn(Handle:event, const String:name[], bool:dontBroadcast)
 {
 	new p_iUserid;
-	userid = GetEventInt(event, "userid");
+	p_iUserid = GetEventInt(event, "userid");
 	new p_iClient;
 	p_iClient = GetClientOfUserId(p_iUserid);
 
